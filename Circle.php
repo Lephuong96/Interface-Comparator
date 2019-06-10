@@ -1,25 +1,44 @@
 <?php
 class Circle{
-    public $radius;
     public $name;
-    public function __construct($name, $radius){
-        $this->radius = $radius;
+    public $radius;
+
+    public function __construct($name, $radius)
+    {
         $this->name = $name;
+        $this->radius = $radius;
     }
 
-    public function getName(){
+    /**
+     * @return mixed
+     */
+    public function getName()
+    {
         return $this->name;
     }
 
-    public function setName($name){
-        $this->name = $name;
-    }
-
-    public function getRadius(){
+    /**
+     * @return mixed
+     */
+    public function getRadius()
+    {
         return $this->radius;
     }
 
-    public function setRadius($radius){
+    /**
+     * @param mixed $radius
+     */
+    public function setRadius($radius)
+    {
         $this->radius = $radius;
     }
+
+    /**
+     * @param mixed $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
 }
